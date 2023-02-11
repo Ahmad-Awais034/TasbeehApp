@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tasbeeh"
+        android:layout_width="match_parent"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/mycolor"
+        android:hint="Add Tasbeeh"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/no_of_times"
+        android:layout_width="match_parent"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/mycolor"
+        android:hint="No of Times"
+        app:layout_constraintTop_toBottomOf="@id/tasbeeh"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/no_of_times"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Add Tasbeeh"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
